@@ -1,0 +1,60 @@
+.contact-section {
+  padding-top: 4rem;
+  background-color: var(--colony-black); /* Warna gelap dari palet */
+  color: white;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 4rem;
+  gap: 2rem;
+}
+
+.contact-info {
+  flex: 1;
+}
+
+.contact-info h2 {
+  color: var(--colony-orange);
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.socials {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: #ccc;
+}
+
+.contact-map {
+  flex: 1;
+}
+
+.map-placeholder {
+  width: 100%;
+  height: 250px;
+  background-color: #333;
+  border-radius: var(--border-radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #777;
+}
+
+.footer-copyright {
+  background-color: #111;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  color: #666;
+  border-top: 1px solid #333;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+}

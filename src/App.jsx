@@ -1,35 +1,57 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from "react";
+import Hero from "./components/Hero/Hero";
+import Navbar from "./components/Navbar/Navbar";
+import Menu from "./components/Menu/Menu";
+import Venue from "./components/Venue/Venue";
+import Contact from "./components/Contact/Contact";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div className="App">
+      <Navbar />
+      <Hero />
+      <section
+        id="about"
+        style={{
+          padding: "4rem 1.5rem",
+          textAlign: "center",
+          backgroundColor: "white",
+        }}
+      >
+        <div className="container">
+          <h4 className="section-title">Tentang Kami</h4>
+          <p style={{ maxWidth: "700px", margin: "0 auto", lineHeight: "1.6" }}>
+            Colony Social Space hadir di Purwokerto sebagai wadah kreatif dan
+            tempat bersantai. Kami menyajikan kopi berkualitas dengan suasana
+            yang mendukung produktivitas Anda.
+          </p>
+        </div>
+      </section>
+      <Menu />
+      <Venue />
+      {/* Placeholder Event Section */}
+      <section
+        id="event"
+        style={{ padding: "4rem 1.5rem", backgroundColor: "#fdfbf7" }}
+      >
+        <div className="container">
+          <h4 className="section-title">Event Terbaru</h4>
+          <h2 className="section-subtitle">Live Music & Workshop</h2>
+          <div
+            style={{
+              textAlign: "center",
+              padding: "2rem",
+              border: "2px dashed var(--colony-brown)",
+              borderRadius: "16px",
+            }}
+          >
+            <p>Cek Instagram kami untuk jadwal event minggu ini!</p>
+          </div>
+        </div>
+      </section>
+      <Contact />
+    </div>
+  );
 }
 
-export default App
+export default App;

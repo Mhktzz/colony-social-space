@@ -1,0 +1,45 @@
+.venue-section {
+  padding: var(--padding-section);
+  background-color: var(--colony-teal); /* Menggunakan warna teal dari palet */
+  color: white;
+}
+
+.venue-content {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.venue-text {
+  flex: 1;
+}
+
+.facilities-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.facilities-list li {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.venue-gallery {
+  flex: 1;
+}
+
+.venue-gallery img {
+  width: 100%;
+  border-radius: var(--border-radius);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .venue-content {
+    flex-direction: column;
+  }
+}
