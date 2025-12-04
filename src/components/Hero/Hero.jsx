@@ -7,9 +7,9 @@ const Hero = () => {
       <div className="container hero-container">
         <div className="hero-text">
           <h1>
-            Social Space &{" "}
-            <span style={{ color: "var(--colony-orange)" }}>Coffee</span> in
-            Purwokerto
+            Coffee,{" "}
+            <span style={{ color: "var(--colony-orange)" }}>Eatery</span> &{" "}
+            Social Space
           </h1>
           <p>
             Tempat nongkrong yang asik, nyaman, dan cozy untuk kamu
